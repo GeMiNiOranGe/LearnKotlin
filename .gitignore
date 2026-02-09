@@ -6,6 +6,7 @@
 
 # Build directories
 build
+bin
 
 # Compiled class file
 *.class
