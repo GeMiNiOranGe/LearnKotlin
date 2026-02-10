@@ -17,6 +17,11 @@ kotlinc Main.kt -d Main.jar
 kotlin -classpath Main.jar MainKt
 ```
 
+Or multiple files, using `cmd` or `bash`
+```bash
+kotlinc *.kt <package_1>/*.kt <package_n>/*.kt -d Main.jar && kotlin -classpath Main.jar MainKt
+```
+
 ## Option 3
 
 Don't want the `*.jar` file? Use this code below
