@@ -11,4 +11,9 @@ fun main(args: Array<String>) {
     printTriangleRepeated(3, 2)
     printOddNumbersUpTo(10)
 	printArray(arrayOf(1, 2, 3, 4, 5))
+
+    println("==================================================")
+
+    println(toEvenOddString(7))
+    println(toBmiString(70.0, 1.75))
 }
