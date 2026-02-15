@@ -20,4 +20,16 @@ fun main(args: Array<String>) {
     println("==================================================")
 
     println(getMessageOrDefault())
+
+    println("==================================================")
+
+    println(checkAge(16))
+    println(getStringLength(message))
+    println(numberTransformer(10, { number -> number * 2}, 3))
+    println(calculateLength(message, {
+        it.length
+    }))
+    println(calculateLength(message) {
+        it.length
+    })
 }
