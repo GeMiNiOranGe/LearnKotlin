@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     printRepeated("$message ", 5)
     printTriangleRepeated(3, 2)
     printOddNumbersUpTo(10)
-	printArray(arrayOf(1, 2, 3, 4, 5))
+    printArray(arrayOf(1, 2, 3, 4, 5))
 
     println("==================================================")
 

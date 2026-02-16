@@ -10,7 +10,7 @@ fun printRepeated(message: String, times: Int) {
 
 fun printTriangleRepeated(height: Int, times: Int) {
     /*
-	// Don't support syntax reverse like this:
+    // Don't support syntax reverse like this:
     for (i in 5..1) {
         println(i)
     }
@@ -20,9 +20,9 @@ fun printTriangleRepeated(height: Int, times: Int) {
 
     while (remainingRepeats > 0) {
         for (i in 1..height) {
-           	for (j in 1..i) {
-            	print("*")
-        	}
+            for (j in 1..i) {
+                print("*")
+            }
             println()
         }
         
