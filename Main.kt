@@ -1,4 +1,5 @@
 import basic.*
+import oop.*
 
 fun main(args: Array<String>) {
     if (args.isNotEmpty()) {
@@ -32,4 +33,11 @@ fun main(args: Array<String>) {
     println(calculateLength(message) {
         it.length
     })
+
+    println("==================================================")
+
+    val person = Person("Alice", 30, 1.65)
+    println(person.toString())
+    person.age = -35
+    println(person.toString())
 }
