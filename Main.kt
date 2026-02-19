@@ -40,4 +40,7 @@ fun main(args: Array<String>) {
     println(person.toString())
     person.age = -35
     println(person.toString())
+
+    val car = Car("Toyota", "DS-152", 2000)
+    println(car.toString())
 }
