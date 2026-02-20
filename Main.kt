@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     }
 
     val message: String = "Hello world!"
+    /*
     println(message)
     printRepeated("$message ", 5)
     printTriangleRepeated(3, 2)
@@ -35,11 +36,18 @@ fun main(args: Array<String>) {
     })
 
     println("==================================================")
+    */
 
     val person = Person("Alice", 30, 1.65)
     println(person.toString())
+    println()
     person.age = -35
     println(person.toString())
+    println()
+
+    val student = Student("Mike", 25, 1.75, 12)
+    println(student.toString())
+    println()
 
     val car = Car("Toyota", "DS-152", 2000)
     println(car.toString())

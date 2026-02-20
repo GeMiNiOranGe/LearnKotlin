@@ -1,7 +1,9 @@
 package oop
 
-class Person {
-    var name: String = ""
+open class Person {
+    protected val tag: String = this::class.simpleName ?: "Unknown"
+
+    var name: String
 
     var age: Int = 0
         get() = field
@@ -20,13 +22,18 @@ class Person {
             }
         }
 
-    constructor(name: String, age: Int, height: Double) {
+    constructor(name: String = "", age: Int = 0, height: Double = 0.0) {
         this.name = name
         this.age = age
         this.height = height
     }
 
-    fun getInfo(): String = "Name: $name, Age: $age, Height: $height"
+    open fun getInfo(): String = """
+        $tag (tag)
+        - Name: $name
+        - Age: $age
+        - Height: $height
+        """.trimIndent()
 
     override fun toString(): String = getInfo()
 }
