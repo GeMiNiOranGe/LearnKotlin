@@ -51,4 +51,8 @@ fun main(args: Array<String>) {
 
     val car = Car("Toyota", "DS-152", 2000)
     println(car.toString())
+    println()
+
+    val sportsCar = SportsCar("Nissan", "Z", 2026, 220)
+    println(sportsCar.toString())
 }
