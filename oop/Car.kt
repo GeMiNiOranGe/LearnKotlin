@@ -3,9 +3,15 @@ package oop
 open class Car(brand: String, model: String, year: Int = 0) {
     protected val tag: String = this::class.simpleName ?: "Unknown"
 
-    var brand: String = brand
-    var model: String = model
-    var year: Int = year
+    var brand: String
+    var model: String
+    var year: Int
+
+    init {
+        this.brand = brand
+        this.model = model
+        this.year = year
+    }
 
     open fun properties(): List<Pair<String, Any>> =
         listOf(
