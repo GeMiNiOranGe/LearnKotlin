@@ -55,4 +55,8 @@ fun main(args: Array<String>) {
 
     val sportsCar = SportsCar("Nissan", "Z", 2026, 220)
     println(sportsCar.toString())
+    println()
+
+    val user = User("Jessica", "jessica@example.com", 25)
+    println(user.toString())
 }
