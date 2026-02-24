@@ -59,4 +59,7 @@ fun main(args: Array<String>) {
 
     val user = User("Jessica", "jessica@example.com", 25)
     println(user.toString())
+
+    val (username, email, age) = user
+    println("$username, $email, $age")
 }
