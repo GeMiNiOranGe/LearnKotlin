@@ -4,9 +4,10 @@ class Student : Person {
     var grade: Int = 0
         get() = field
         set(value) {
-            if (value >= 0) {
-                field = value
+            if (value < 0) {
+                throw NegativeNumberException("Grade")
             }
+            field = value
         }
 
     constructor(

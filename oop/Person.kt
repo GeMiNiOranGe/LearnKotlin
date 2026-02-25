@@ -8,18 +8,19 @@ open class Person {
     var age: Int = 0
         get() = field
         set(value) {
-            if (value >= 0) {
-                // TODO: Create a custom exeption
-                field = value
+            if (value < 0) {
+                throw NegativeNumberException("Age")
             }
+            field = value
         }
 
     var height: Double = 0.0
         get() = field
         set(value) {
-            if (value >= 0.0) {
-                field = value
+            if (value < 0.0) {
+                throw NegativeNumberException("Height")
             }
+            field = value
         }
 
     constructor(name: String = "", age: Int = 0, height: Double = 0.0) {

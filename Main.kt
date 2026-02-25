@@ -41,7 +41,7 @@ fun main(args: Array<String>) {
     val person = Person("Alice", 30, 1.65)
     println(person.toString())
     println()
-    person.age = -35
+    // person.age = -35
     println(person.toString())
     println()
 
@@ -54,6 +54,7 @@ fun main(args: Array<String>) {
     println()
 
     val sportsCar = SportsCar("Nissan", "Z", 2026, 220)
+    // sportsCar.maxSpeed = -50
     println(sportsCar.toString())
     println()
 

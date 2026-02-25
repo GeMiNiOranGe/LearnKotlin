@@ -9,9 +9,8 @@ class SportsCar(
     var maxSpeed: Int = maxSpeed
         get() = field
         set(value) {
-            if (value >= 0) {
-                field = value
-            }
+            require(value >= 0) { "Max Speed must be >= 0" }
+            field = value
         }
 
     override fun properties(): List<Pair<String, Any>> =
