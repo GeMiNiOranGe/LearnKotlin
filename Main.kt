@@ -36,7 +36,6 @@ fun main(args: Array<String>) {
     })
 
     println("==================================================")
-    */
 
     val person = Person("Alice", 30, 1.65)
     println(person.toString())
@@ -63,4 +62,10 @@ fun main(args: Array<String>) {
 
     val (username, email, age) = user
     println("$username, $email, $age")
+
+    println("==================================================")
+    */
+
+    val character: Char = 'a'
+    println("The character is $character")
 }
