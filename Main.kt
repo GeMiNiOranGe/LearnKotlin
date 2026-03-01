@@ -18,6 +18,7 @@ fun main(args: Array<String>) {
 
     println(toEvenOddString(7))
     println(toBmiString(70.0, 1.75))
+    println(toSeasonString(5))
 
     println("==================================================")
 

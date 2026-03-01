@@ -24,7 +24,7 @@ fun toSeasonString(month: Int): String {
     return when (month) {
         in 1..3 -> "Spring"
         in 4..6 -> "Summer"
-        7, 8, 9 -> "Autumn
+        7, 8, 9 -> "Autumn"
         10, 11, 12 -> "Winter"
         else -> "Unknown"
     }
