@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
     printTriangleRepeated(3, 2)
     printOddNumbersUpTo(10)
     printArray(arrayOf(1, 2, 3, 4, 5))
+    printFirstDivisible(listOf(listOf(3, 5, 8), listOf(4, 9, 14), listOf(6, 10, 11)), 7)
 
     println("==================================================")
 

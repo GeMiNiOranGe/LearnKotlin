@@ -52,3 +52,18 @@ fun printArray(numbers: Array<Int>) {
     }
     println()
 }
+
+fun printFirstDivisible(matrix: List<List<Int>>, divisor: Int) {
+    if (divisor == 0) {
+        throw IllegalArgumentException("Divisor must not be 0")
+    }
+
+    search@ for (row in matrix) {
+        for (value in row) {
+            if (value % divisor == 0) {
+                println("Found: $value")
+                break@search
+            }
+        }
+    }
+}
