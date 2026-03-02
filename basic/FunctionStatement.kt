@@ -18,3 +18,22 @@ fun numberTransformer(number: Int, transformer: (Int) -> Int, initValue: Int): I
 fun calculateLength(text: String, calculator: (String) -> Int): Int {
     return calculator(text)
 }
+
+fun findEven() {
+    /*
+    // Using a custom label to return from the lambda expression
+    listOf(1, 3, 4, 6).forEach myForEachLabel@ {
+        if (it % 2 != 0) {
+            return@myForEachLabel
+        }
+        println("Found $it")
+    }
+    */
+
+    listOf(1, 3, 4, 6).forEach {
+        if (it % 2 != 0) {
+            return@forEach
+        }
+        println("Found $it")
+    }
+}

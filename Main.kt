@@ -36,6 +36,7 @@ fun main(args: Array<String>) {
     println(calculateLength(message) {
         it.length
     })
+    findEven()
 
     println("==================================================")
 
