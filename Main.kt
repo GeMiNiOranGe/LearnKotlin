@@ -72,7 +72,11 @@ fun main(args: Array<String>) {
     println("The character is $character")
 
     println("==================================================")
-    */
 
     printStrings()
+
+    println("==================================================")
+    */
+
+    printArrays()
 }
