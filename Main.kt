@@ -67,8 +67,12 @@ fun main(args: Array<String>) {
     println("$username, $email, $age")
 
     println("==================================================")
-    */
 
     val character: Char = 'a'
     println("The character is $character")
+
+    println("==================================================")
+    */
+
+    printStrings()
 }
