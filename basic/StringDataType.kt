@@ -1,6 +1,6 @@
 package basic
 
-fun printStrings() {
+fun printStrings(): Unit {
     val message: String = "      Hello everyone! I am Mike.     "
     println("Message                    : '$message'")
 

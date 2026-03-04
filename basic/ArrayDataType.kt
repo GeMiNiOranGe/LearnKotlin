@@ -1,6 +1,6 @@
 package basic
 
-fun printArrays() {
+fun printArrays(): Unit {
     val mixedArray: Array<Any> = arrayOf(1, "two", 3.0, true)
     println("Mixed array            : ${mixedArray.contentToString()}")
     println()

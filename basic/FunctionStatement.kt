@@ -19,7 +19,7 @@ fun calculateLength(text: String, calculator: (String) -> Int): Int {
     return calculator(text)
 }
 
-fun findEven() {
+fun findEven(): Unit {
     /*
     // Using a custom label to return from the lambda expression
     listOf(1, 3, 4, 6).forEach myForEachLabel@ {

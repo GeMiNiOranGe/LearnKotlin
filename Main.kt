@@ -1,7 +1,7 @@
 import basic.*
 import oop.*
 
-fun main(args: Array<String>) {
+fun main(args: Array<String>): Unit {
     if (args.isNotEmpty()) {
         println("The first argument: ${args[0]}\n")
     }

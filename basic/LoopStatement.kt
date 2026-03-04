@@ -1,6 +1,6 @@
 package basic
 
-fun printRepeated(message: String, times: Int) {
+fun printRepeated(message: String, times: Int): Unit {
     repeat(times) {
         print(message)
     }
@@ -8,7 +8,7 @@ fun printRepeated(message: String, times: Int) {
     println()
 }
 
-fun printTriangleRepeated(height: Int, times: Int) {
+fun printTriangleRepeated(height: Int, times: Int): Unit {
     /*
     // Don't support syntax reverse like this:
     for (i in 5..1) {
@@ -39,21 +39,21 @@ fun printTriangleRepeated(height: Int, times: Int) {
     println("*")
 }
 
-fun printOddNumbersUpTo(number: Int) {
+fun printOddNumbersUpTo(number: Int): Unit {
     for (i in 1..number step 2) {
         print("$i ")
     }
     println()
 }
 
-fun printArray(numbers: Array<Int>) {
+fun printArray(numbers: Array<Int>): Unit {
     for (i in 0 until numbers.size) {
         print("${numbers[i]} ")
     }
     println()
 }
 
-fun printFirstDivisible(matrix: List<List<Int>>, divisor: Int) {
+fun printFirstDivisible(matrix: List<List<Int>>, divisor: Int): Unit {
     if (divisor == 0) {
         throw IllegalArgumentException("Divisor must not be 0")
     }
