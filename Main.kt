@@ -37,6 +37,7 @@ fun main(args: Array<String>): Unit {
         it.length
     })
     findEven()
+    printStringList("Kotlin", "is", "fun!", footer = "End of the list.")
 
     println("==================================================")
 

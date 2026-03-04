@@ -37,3 +37,8 @@ fun findEven(): Unit {
         println("Found $it")
     }
 }
+
+fun printStringList(vararg strings: String, footer: String): Unit {
+    strings.forEach { print("$it ") }
+    println("($footer)")
+}
